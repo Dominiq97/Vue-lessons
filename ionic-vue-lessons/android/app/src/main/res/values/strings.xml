@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Vue Ionic Lessons</string>
+    <string name="title_activity_main">Vue Ionic Lessons</string>
+    <string name="package_name">com.dominic.vue_ionic_lessons</string>
+    <string name="custom_url_scheme">com..dominic.vue_ionic_lessons</string>
+</resources>

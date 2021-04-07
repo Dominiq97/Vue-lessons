@@ -1,0 +1,13 @@
+{
+  "appId": "com.dominic.vue_ionic_lessons",
+  "appName": "Vue Ionic Lessons",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
