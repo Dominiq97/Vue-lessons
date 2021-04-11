@@ -34,7 +34,8 @@ header {
           >No goals have been added yet - please start adding some!</ion-label
         >
         <ion-list v-else>
-          <ion-item v-for="(goal,index) in goals" v-bind:key="goal">{{goal}}-{{index}}<ion-button v-on:click="removeGoal(index)">X</ion-button>
+          <ion-item v-for="(goal,index) in goals" v-bind:key="goal">{{goal}}-{{index}}
+            <ion-button v-on:click="removeGoal(index)">X</ion-button>
           <ion-input @click.stop></ion-input>
           </ion-item>
           
