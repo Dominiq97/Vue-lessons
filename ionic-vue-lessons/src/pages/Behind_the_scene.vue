@@ -82,16 +82,14 @@ header {
   <ion-header>
     <ion-title>Vue Behind The Scenes</ion-title>
   </ion-header>
-  <ion-content>
     <h2>How Vue Works</h2>
-    <ion-input type="text" @input="saveInput"></ion-input>
+    <ion-input type="text" ref="userText" />
     <ion-button @click="setText">Set Text</ion-button>
     <p>{{ message }}</p>
-  </ion-content>
 </template>
 
 <script>
-import { /*IonInput, IonItem, IonList, IonLabel,,IonSpan */ IonButton,IonInput,IonTitle,IonHeader,IonContent } from "@ionic/vue";
+import { /*IonInput, IonItem, IonList, IonLabel,,IonSpan */ IonButton,IonInput,IonTitle,IonHeader } from "@ionic/vue";
 export default {
   components: {
     // IonInput,
@@ -102,7 +100,6 @@ export default {
     IonButton,
     IonInput,
     IonTitle,
-    IonContent,
     IonHeader
   },
   data() {
@@ -115,8 +112,11 @@ export default {
     saveInput(event) {
       this.currentUserInput = event.target.value;
     },
+    
     setText() {
-      this.message = this.currentUserInput;
+      // this.message = this.currentUserInput;
+      this.message = this.$refs.userText.$el.value;
+      
     },
   },
 };

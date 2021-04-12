@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Basics from '../pages/Basics.vue'
 import Consitionals_and_lists from '../pages/Conditionals_and_lists.vue'
 import Game from '../pages/Game.vue'
+import Components from '../pages/Components.vue'
 import Behind_the_scene from '../pages/Behind_the_scene.vue'
 
 const routes = [
@@ -25,6 +26,10 @@ const routes = [
   {
     path: '/scene',
     component: Behind_the_scene
+  },
+  {
+    path: '/components',
+    component: Components
   },
   
   

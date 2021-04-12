@@ -27,6 +27,8 @@ import '@ionic/vue/css/display.css';
 import './theme/variables.css';
 import './theme/core.css';
 
+/* Components */
+import FriendContact from './components/FriendContact.vue';
 
 const app = createApp(App)
   .use(IonicVue)
@@ -34,6 +36,7 @@ const app = createApp(App)
   .use(store);
 
 app.component('base-layout', BaseLayout);
+app.component('friend-contact', FriendContact);
   
 router.isReady().then(() => {
   app.mount('#app');
