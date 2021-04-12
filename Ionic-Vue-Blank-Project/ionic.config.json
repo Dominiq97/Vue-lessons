@@ -1,0 +1,7 @@
+{
+  "name": "component-connection",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
