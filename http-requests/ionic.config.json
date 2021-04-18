@@ -1,0 +1,7 @@
+{
+  "name": "http-requests",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
